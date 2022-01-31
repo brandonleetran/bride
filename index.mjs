@@ -1,6 +1,9 @@
 // Require the necessary discord.js classes
-require('dotenv').config()
+// Using ES6 Modules for import/export keywords
+import dotenv  from 'dotenv';
 import { Client, Intents } from 'discord.js';
+
+dotenv.config();
 
 // Create a new client instance
 const client = new Client({
@@ -16,7 +19,7 @@ const client = new Client({
 
 // When the client is ready, run this code (only once)
 client.once('ready', () => {
-	console.log('Ready!');
+	console.log('Vroom!');
 });
 
 // Login bot using token
